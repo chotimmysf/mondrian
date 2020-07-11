@@ -1,0 +1,289 @@
+@import url("https://fonts.googleapis.com/css2?family=Sawarabi+Mincho&display=swap");
+:root {
+  --yellow: #ffd319;
+  --orange: #ff901f;
+  --rose: #ff2975;
+  --magenta: #f222ff;
+  --purple: #8c1eff;
+  --invrose: #00d68a;
+  --invyell: #002ce6;
+  --invmag: #0ddd00;
+  --invora: #006fe0;
+  --invpurp: #73e100;
+}
+* {
+  background-color: #161240;
+  font-family: "Sawarabi Mincho", sans-serif;
+}
+h1 {
+  color: #161240;
+  text-align: center;
+  font-size: 170px;
+  border-style: none;
+  border-radius: 170px;
+  background-image: linear-gradient(
+    var(--yellow),
+    var(--orange),
+    var(--rose),
+    var(--magenta),
+    var(--purple)
+  );
+}
+
+h1:hover {
+  color: #e9edbf;
+  background-image: linear-gradient(
+    var(--invyell),
+    var(--invora),
+    var(--invrose),
+    var(--invmag),
+    var(--invpurp)
+  );
+  transition: all 0.25s linear;
+}
+.container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+}
+
+.item {
+  background-color: var(--yellow);
+  color: var(--rose);
+  display: grid;
+  border-radius: 5px;
+  font-size: 60px;
+  padding: 15px;
+  text-align: center;
+}
+
+.item:hover {
+  color: var(--invrose);
+  background-color: var(--invyell);
+  transition: all 0.75s;
+}
+
+/* Colors for Specific Boxes */
+.i2 {
+  grid-row-start: 2;
+  grid-row-end: 5;
+  background-color: var(--orange);
+  color: var(--purple);
+}
+.i2:hover {
+  color: var(--invpurp);
+  background-color: var(--invora);
+}
+.i4 {
+  background-color: var(--orange);
+  color: var(--purple);
+}
+.i4:hover {
+  color: var(--invpurp);
+  background-color: var(--invora);
+}
+.i5 {
+  background-color: var(--purple);
+  color: var(--yellow);
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  grid-column-end: 9;
+}
+.i5:hover {
+  color: var(--invyell);
+  background-color: var(--invpurp);
+}
+.i6 {
+  background-color: var(--magenta);
+  color: var(--yellow);
+}
+.i6:hover {
+  color: var(--invyell);
+  background-color: var(--invmag);
+}
+.i7 {
+  grid-row-start: 1;
+  grid-row-end: 5;
+  background-color: var(--orange);
+  color: var(--purple);
+}
+.i7:hover {
+  color: var(--invpurp);
+  background-color: var(--invora);
+}
+.i9 {
+  background-color: var(--orange);
+  color: var(--purple);
+}
+.i9:hover {
+  color: var(--invpurp);
+  background-color: var(--invora);
+}
+.i11 {
+  background-color: var(--magenta);
+  color: var(--orange);
+}
+.i11:hover {
+  color: var(--invora);
+  background-color: var(--invmag);
+}
+.i13 {
+  grid-column-start: 6;
+  grid-column-end: 9;
+  background-color: var(--purple);
+  color: var(--orange);
+  font-size: 150px;
+}
+.i13:hover {
+  color: var(--invora);
+  background-color: var(--invpurp);
+}
+.i14 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.i15 {
+  grid-column-start: 4;
+  grid-column-end: 9;
+  background-color: var(--rose);
+  color: var(--yellow);
+}
+.i15:hover {
+  color: var(--invyell);
+  background-color: var(--invrose);
+}
+.i16 {
+  grid-column-start: 1;
+  grid-column-end: 8;
+  background-color: var(--magenta);
+  color: var(--yellow);
+}
+.i16:hover {
+  color: var(--invyell);
+  background-color: var(--invmag);
+}
+.i19 {
+  background-color: var(--purple);
+  color: var(--magenta);
+}
+.i19:hover {
+  color: var(--invmag);
+  background-color: var(--invpurp);
+}
+.i20 {
+  background-color: var(--rose);
+  color: var(--yellow);
+}
+.i20:hover {
+  color: var(--invyell);
+  background-color: var(--invrose);
+}
+.i22 {
+  grid-column-start: 5;
+  grid-column-end: 9;
+  background-color: var(--magenta);
+  color: var(--purple);
+}
+.i22:hover {
+  color: var(--invmag);
+  background-color: var(--invpurp);
+}
+.i24 {
+  background-color: var(--orange);
+}
+.i24:hover {
+  background-color: var(--invora);
+}
+.i25 {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 9;
+  grid-row-end: 12;
+  font-size: 84px;
+  background-color: var(--magenta);
+  color: var(--purple);
+}
+.i25:hover {
+  color: var(--invmag);
+  background-color: var(--invpurp);
+}
+.i26 {
+  background-color: var(--rose);
+  color: var(--purple);
+  grid-row-start: 8;
+  grid-row-end: 13;
+  grid-column-start: 2;
+  grid-column-end: 6;
+  font-size: 300px;
+}
+.i26:hover {
+  color: var(--invpurp);
+  background-color: var(--invrose);
+}
+.i27 {
+  background-color: var(--purple);
+  color: var(--yellow);
+}
+.i27:hover {
+  color: var(--invyell);
+  background-color: var(--invpurp);
+}
+.i28 {
+  background-color: var(--orange);
+  color: var(--yellow);
+  grid-row-start: 8;
+  grid-row-end: 13;
+  font-size: 150px;
+}
+.i28:hover {
+  color: var(--invyell);
+  background-color: var(--invora);
+}
+.i29 {
+  background-color: var(--orange);
+  color: var(--yellow);
+  grid-row-start: 15;
+  grid-row-end: 16;
+  grid-column-start: 1;
+  grid-column-end: 9;
+}
+.i29:hover {
+  color: var(--invyell);
+  background-color: var(--invora);
+}
+.i30 {
+  background-color: var(--purple);
+  color: var(--rose);
+  grid-column-start: 6;
+  grid-column-end: 8;
+  grid-row-start: 9;
+  grid-row-end: 13;
+  font-size: 336px;
+}
+.i30:hover {
+  color: var(--invpurp);
+  background-color: var(--invmag);
+}
+.i31 {
+  background-color: var(--yellow);
+  color: var(--orange);
+  grid-row-start: 12;
+  grid-row-end: 13;
+  grid-column-start: 8;
+  grid-column-end: 9;
+}
+.i31:hover {
+  color: var(--invora);
+  background-color: var(--invyell);
+}
+.i32 {
+  grid-row-start: 4;
+  grid-row-end: 6;
+  background-color: var(--purple);
+  color: var(--orange);
+}
+.i32:hover {
+  background-color: var(--invpurp);
+  color: var(--invora);
+}
